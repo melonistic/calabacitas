@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  owner: MyString
+  is_active: false
+  inception_date: 2017-04-29 08:53:40
+
+two:
+  name: MyString
+  description: MyText
+  owner: MyString
+  is_active: false
+  inception_date: 2017-04-29 08:53:40
