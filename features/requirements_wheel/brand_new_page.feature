@@ -1,3 +1,3 @@
-GIVEN I am a user navigated to the home page
-WHEN I click on the "USER CUSTOMIZED" link
-THEN I see a page with the USER CUSTOMIZED text
+Given I am a user navigated to the home page
+When I click on the "USER CUSTOMIZED" link
+Then I see a page with the USER CUSTOMIZED text
