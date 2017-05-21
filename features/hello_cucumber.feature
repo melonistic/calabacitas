@@ -2,6 +2,6 @@
 Feature: This is a test to make sure we can run tests
 
 
-Given the rails server is up
-When I navigate to the basic rails server page
-Then I see a message onscreen for the rails server
+Given the I'm on the rails server page
+When I click "About your application's environment"
+Then I view an expanded message containing the details of my environment
