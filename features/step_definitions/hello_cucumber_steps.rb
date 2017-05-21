@@ -1,4 +1,5 @@
 Given(/^I'm on the rails server page$/) do
+  Capybara.current_driver = :selenium
   visit 'http://localhost:3000'
 end
 
