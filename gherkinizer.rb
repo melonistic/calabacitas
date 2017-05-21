@@ -1,2 +1,2 @@
-Vamos amigos!
-Let's gherkinize this place!
+# Vamos amigos!
+# Let's gherkinize this place!
