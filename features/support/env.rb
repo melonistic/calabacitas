@@ -55,4 +55,21 @@ end
 # The :transaction strategy is faster, but might give you threading problems.
 # See https://github.com/cucumber/cucumber-rails/blob/master/features/choose_javascript_database_strategy.feature
 Cucumber::Rails::Database.javascript_strategy = :truncation
+tures/support/env.rb
+
+# Clean the database before and after each scenario
+  Before do
+  DatabaseCleaner.start
+  end
+
+  After do |scenario|
+  DatabaseCleaner.clean
+  end
+
+# Register Chrome as the default driver
+  Capybara.register_driver :chrome do |app|
+  Capybara::Selenium::Driver.new(app, :browser => :chrome)
+  end
+
+  Capybara.javascript_driver = :chrome
 
