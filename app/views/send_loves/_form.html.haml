@@ -1,0 +1,13 @@
+= form_for @send_love do |form|
+  - if @send_love.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@send_love.errors.count, "error")} prohibited this garden from being saved:"
+      %ul
+        - @send_love.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = form.label :email
+    = form.text_field :email
+
+  = form.submit 'Send Love'
