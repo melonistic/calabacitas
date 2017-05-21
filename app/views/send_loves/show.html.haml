@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Email:
+  = @send_love.email
+
+= link_to 'Edit', edit_send_lofe_path(@send_love)
+\|
+= link_to 'Back', send_loves_path

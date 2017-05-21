@@ -1,0 +1,19 @@
+%h1 Love Senders
+
+%table
+  %thead
+    %tr
+      %th Email
+      %th Actions
+
+  %tbody
+    - @send_loves.each do |love|
+      %tr
+        %td= love.email
+        %td= link_to 'Show', love
+        %td= link_to 'Edit', edit_send_lofe_path(love)
+        %td= link_to 'Destroy', love, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'Send Love', new_send_lofe_path
