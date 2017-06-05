@@ -1,5 +1,5 @@
 Feature: Success message upon submitting form
-	Scenario: Users would like to see a success message that says USER SPECIFIED TEXT when they submit the form so they know their message got sent
+	Scenario: Users would like to see a success message that says USER CUSTOMIZED on the home page after they have submitted their message on the Talk to Us form
 
 
 Given I am on the "Talk to Us" form
