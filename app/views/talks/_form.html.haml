@@ -1,0 +1,18 @@
+= form_for @talk do |form|
+  - if @talk.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@talk.errors.count, 'error')} prohibited this form from being saved:"
+      %ul
+        - @talk.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = form.label :email
+    = form.text_field :email
+
+  .field
+    = form.label :message
+    = form.text_area :message
+
+  = link_to 'Cancel', root_path
+  = form.submit 'Send Love'
