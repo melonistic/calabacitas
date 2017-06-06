@@ -81,7 +81,7 @@ class TalksController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def talk_params
-    params.require(:talk).permit(:email)
+    params.require(:talk).permit(:email, :message)
   end
 
 end
