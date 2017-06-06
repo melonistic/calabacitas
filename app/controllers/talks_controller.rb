@@ -44,7 +44,7 @@ class TalksController < ApplicationController
 
     respond_to do |format|
       if @talk.save
-        format.html { redirect_to @talk, notice: 'Talk was successfully created.' }
+        format.html { redirect_to root_path} #, notice: 'YOUR MESSAGE GOES HERE'
         format.json { render :show, status: :created, location: @talk }
       else
         format.html { render :new }
@@ -60,7 +60,7 @@ class TalksController < ApplicationController
   def update
     respond_to do |format|
       if @talk.update(talk_params)
-        format.html { redirect_to @talk, notice: 'Talk to Us was successfully updated.' }
+        format.html { redirect_to root_path } #, notice: 'YOUR MESSAGE GOES HERE'
         format.json { render :show, status: :ok, location: @talk }
       else
         format.html { render :edit }
