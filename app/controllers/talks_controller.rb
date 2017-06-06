@@ -83,5 +83,5 @@ class TalksController < ApplicationController
   def talk_params
     params.require(:talk).permit(:email)
   end
-  
+
 end
