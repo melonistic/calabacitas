@@ -1,0 +1,20 @@
+%h1 Talk to Us List
+
+%table
+  %thead
+    %tr
+      %th Email
+      %th Actions
+
+  %tbody
+    - @talks.each do |talk|
+      %tr
+        %td= talk.email
+        %td= talk.message
+        %td= link_to 'Show', talk
+        %td= link_to 'Edit', edit_talk_path(talk)
+        %td= link_to 'Destroy', talk, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'Talk to Us', new_talk_path
