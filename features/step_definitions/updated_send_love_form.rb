@@ -1,10 +1,10 @@
 Given(/^I am on the "Talk to Us" form$/) do
-	  visit 'http://localhost:3000/send_loves'
+	  visit 'http://localhost:3000/talks/new'
 end
 
 When(/^I enter my email address and a message$/) do
-	fill_in('Email', :with => 'tpn.hcat@gmail.com')
-	fill_in('Message', :with => 'Heyyyyyy')
+	fill_in('talk_email', :with => 'tpn.hcat@gmail.com')
+	fill_in('talk_message', :with => 'Heyyyyyy')
 end
 
 And(/^I click "Send Love"$/) do
@@ -13,9 +13,9 @@ And(/^I click "Send Love"$/) do
 end
 
 Then(/^I am redirected to the home page$/) do
-	expect(page). to have_css('#home-title', test:'Oh My Gherkin Live!')
+	expect(page.find('#home-title')).to have_content 'Oh My Gherkin Live!'
 end
 
 And(/^I see a success message that lets me know my note has been sent$/) do
-	expect(page). to have_css('#notice', test:'USER CUSTOMIZED TEXT')
+	expect(page.find('#notice')).to have_content 'USER CUSTOMIZED TEXT'
 end
