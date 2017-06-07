@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Email:
+  = @talk.email
+%p
+  %b Message:
+  = @talk.message
+
+= link_to 'Edit', edit_talk_path(@talk)
+\|
+= link_to 'Back', talks_path

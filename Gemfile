@@ -49,7 +49,10 @@ group :development do
 end
 
 group :test do
+  gem 'rspec-rails', '~> 3.2.1'
+  gem 'shoulda'
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
+  gem 'selenium-webdriver'
 end
