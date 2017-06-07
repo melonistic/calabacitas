@@ -5,6 +5,25 @@
       %ul
         - @talk.errors.full_messages.each do |message|
           %li= message
+  .field
+    = form.label 'USER CUSTOMIZED1'
+    = form.text_field :user_customized1
+
+  .field
+    = form.label 'USER CUSTOMIZED2'
+    = form.text_field :user_customized2
+
+  .field
+    = form.label 'USER CUSTOMIZED3'
+    = form.text_field :user_customized3
+
+  .field
+    = form.label 'USER CUSTOMIZED4'
+    = form.text_field :user_customized4
+
+  .field
+    = form.label 'USER CUSTOMIZED5'
+    = form.text_field :user_customized5
 
   .field
     = form.label :email

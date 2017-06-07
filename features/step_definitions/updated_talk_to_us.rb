@@ -6,7 +6,7 @@ When(/^I click "About your application's environment"$/) do
 	  find("#talk-to-us").click
 end
 
-Then(/^I see a form with 5 USER CUSTOIMIZED text fields, an email address field, a free-text message field, and a "Send Love" button$/) do
+Then(/^I see a form with 5 USER CUSTOMIZED text fields, an email address field, a free-text message field, and a "Send Love" button$/) do
 	find_field('USER CUSTOMIZED1').value
 	find_field('USER CUSTOMIZED2').value
 	find_field('USER CUSTOMIZED3').value
