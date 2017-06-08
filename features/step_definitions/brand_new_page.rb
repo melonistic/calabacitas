@@ -7,9 +7,9 @@ When(/^I click on the "USER CUSTOMIZED" link$/) do
 end
 
 Then(/^I see a page with the USER CUSTOMIZED text$/) do
-	expect(page.find('#brand-new-page h1')).to have_content 'USER CUSTOMIZED TEXT'
+	expect(page.find('#brand-new-page h1')).to have_content 'The William Page'
 end
 
 And(/^I see a blurb on the page$/) do
-	expect(page.find('#brand-new-page .blurb')).to have_content 'USER CUSTOMIZED BLURB'
+	expect(page.find('#brand-new-page .blurb')).to have_content 'Bill Clinton'
 end
